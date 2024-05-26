@@ -1,7 +1,8 @@
 name: Run my python
 on: 
-  push: # do this every push
-
+  # push: # do this every push
+  schedule:
+  - cron: "0 0 * * *"
 jobs:
   build:
     name: Set up environment
@@ -13,4 +14,4 @@ jobs:
         pip3 install --upgrade pip
     - name: Run my python
       run: |
-        python3 test.py
+        python3 test.py      #爬蟲

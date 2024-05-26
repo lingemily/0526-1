@@ -7,3 +7,6 @@ print(b)
 print("hello")
 
 print("good")
+print("ok")
+print(a)
+
